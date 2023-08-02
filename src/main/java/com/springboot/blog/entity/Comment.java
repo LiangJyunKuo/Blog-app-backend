@@ -27,6 +27,6 @@ public class Comment {
     private String body;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "post_id",nullable = false)//foreign key 1:N => 放N
+    @JoinColumn(name = "post_id",nullable = false)
     private Post post;
 }
